@@ -108,11 +108,11 @@ public class RosterTest {
 
     // Approach 7, second example
 
-    public static void processPersonsWithFunction(
-            List<Person> roster,
-            Predicate<Person> tester,
-            Function<Person, String> mapper,
-            Consumer<String> block) {
+    public static void processPersonsWithFunction(List<Person> roster,
+                                                  Predicate<Person> tester,
+                                                  Function<Person,
+                                                  String> mapper,
+                                                  Consumer<String> block) {
         for (Person p : roster) {
             if (tester.test(p)) {
                 String data = mapper.apply(p);
@@ -264,7 +264,7 @@ public class RosterTest {
                         && p.getAge() >= 18
                         && p.getAge() <= 25,
                 p -> p.getEmailAddress(),
-                email -> System.out.println(email)
+                System.out::println //lambda swapped by method reference
         );
 
         System.out.println();

@@ -12,3 +12,15 @@ class OuterClass {
 }
 InnerClass - have access to OuterClass members eg. imeno.
 StaticNestedClass - do not have access to OuterClass members.
+
+https://docs.oracle.com/javase/tutorial/java/javaOO/anonymousclasses.html
+Anonymous class - They enable you to declare and instantiate a class at the same time. Anonymous classes are inner classes with no name.
+
+Stream API req:
+- Abstract Classes,
+- StaticNestedClasses,
+- Lambdas
+
+Lambdas:
+https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html#approach6
+
