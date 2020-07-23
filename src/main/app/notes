@@ -1,0 +1,14 @@
+https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
+Nested classes - may be static or non static.
+class OuterClass {
+    private String imeno;
+    ...
+    static class StaticNestedClass {
+        ...
+    }
+    class InnerClass {
+        ...
+    }
+}
+InnerClass - have access to OuterClass members eg. imeno.
+StaticNestedClass - do not have access to OuterClass members.
