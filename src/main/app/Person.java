@@ -10,9 +10,10 @@ public class Person {
         //return Collections.emptyList();
         return List.of(new Person("Bob", LocalDate.now(), 22, Sex.MALE, "bob@gmail.com"),
                         new Person("Mark", LocalDate.now(), 24, Sex.MALE, "mark@gmail.com"),
-                        new Person("Julia", LocalDate.now(), 32, Sex.FEMALE, "bosvasavb@gmail.com")
-
-
+                        new Person("Julia", LocalDate.now(), 32, Sex.FEMALE, "bosvasavb@gmail.com"),
+                        new Person("Andy", LocalDate.now(), 12, Sex.FEMALE, "andddy@gmail.com"),
+                        new Person("John", LocalDate.now(), 80, Sex.MALE, "john@gmail.com"),
+                        new Person("Lily", LocalDate.now(), 41, Sex.FEMALE, "lil@gmail.com")
                 );
     }
 
